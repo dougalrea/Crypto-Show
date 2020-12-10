@@ -1,0 +1,77 @@
+@import '~bulma/bulma.sass'; 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+
+//*HOME PAGE
+
+body{
+	font-family: 'Quicksand', sans-serif;
+}
+
+.home-container{
+	margin-top: -100px;
+}
+
+.home-buttons{
+	display: flex;
+	justify-content: center;
+}
+
+.home-button{
+	margin: 0 40px;
+}
+
+
+//*COIN INDEX
+
+
+.titles{
+margin-top: 40px;
+margin-bottom: 20px;
+}
+
+h2{
+	font-weight: bold;
+}
+
+img{
+	max-width: 40px;
+}
+
+
+//*WHATS HOT
+
+.tweets{
+	display: flex;
+	margin: 30px 50px;
+}
+
+@media only screen and (max-width: 700px) {
+ 
+	.home-buttons{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 30px;
+	}
+
+	.home-button{
+		margin: 20px;
+	}
+
+	.tweets{
+		display: flex;
+		flex-direction: column;
+	}
+
+.titles{
+	display: none;
+}
+
+.column{ 
+	text-align: center;
+}
+
+
+
+
+}

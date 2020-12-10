@@ -1,8 +1,24 @@
 import React from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+
+import Home from './components/Home'
+import Nav from './components/Nav'
+import CoinIndex from './components/CoinIndex'
+import ICouldHaveMadeWhat from './components/ICouldHaveMadeWhat'
+import WhatsHot from './components/WhatsHot'
 
 function App() {
-  console.log(process.env.REACT_APP_MY_API_KEY)
-  return <h1>Hello World</h1>
+  return (
+    <BrowserRouter>
+      <Nav />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/coins" component={CoinIndex} />
+        <Route path='/icouldhavemadewhat' component={ICouldHaveMadeWhat} />
+        <Route path='/whatshot' component={WhatsHot}/>
+      </Switch>
+    </BrowserRouter>
+  )
 }
 
 export default App
