@@ -6,6 +6,7 @@ import Nav from './components/Nav'
 import CoinIndex from './components/CoinIndex'
 import ICouldHaveMadeWhat from './components/ICouldHaveMadeWhat'
 import WhatsHot from './components/WhatsHot'
+import CoinShow from './components/CoinShow'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Nav />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route path="/coins/:id" component={CoinShow} />
         <Route path="/coins" component={CoinIndex} />
         <Route path='/icouldhavemadewhat' component={ICouldHaveMadeWhat} />
         <Route path='/whatshot' component={WhatsHot}/>

@@ -2,7 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
+
 function Home() {
+
   return (
     
 			
@@ -15,7 +17,7 @@ function Home() {
           <div className="container home-buttons"> 
             <Link to="/coins">
               <h2 className="subtitle has-text-centered home-button is-4">
-        Coins
+        See All Currencies
               </h2>
             </Link>
             <Link to="/icouldhavemadewhat">

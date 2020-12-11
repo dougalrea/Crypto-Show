@@ -26,10 +26,13 @@ function CoinIndex() {
       }
     }
     getData()
+    const interval = setInterval(() => {
+      getData()
+    }, 10000)
+    return () => clearInterval(interval)
   }, [pageNumber])
 
   return (
-   
     <div className ="container is-fluid ">
       <div className="columns is-centered titles">
 		
@@ -57,11 +60,11 @@ function CoinIndex() {
         </div>
 
         <div className="column"> 
-          <h2>24hr</h2>
+          <h2>Market Cap</h2>
         </div>
 
         <div className="column"> 
-          <h2>Volume</h2>
+          <h2>1 Day Volume</h2>
         </div>
 
       </div>

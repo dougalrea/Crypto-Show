@@ -20,6 +20,10 @@ export async function getHistoricValueObject(urlRequest) {
   return axios.get(urlRequest)
 }
 
+export function getSingleCoin(id) {
+  return axios.get(`${baseUrl}/currencies/ticker?key=${key}&ids=${id}&convert=GBP`)
+}
+
 // const currency = formdata.currency
 // const start = formdata.date
 // const end = formdata.date

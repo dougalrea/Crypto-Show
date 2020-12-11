@@ -76,10 +76,8 @@ function ICouldHaveMadeWhat() {
             <div className="field">
               <button type="submit" className="button is-fullwidth is-primary">Make me look foolish!</button>
             </div>
+            <p className ="field">{result ? `You silly muppet! You could have made £${result}! If only you'd followed your hunches...` : '' }</p>
           </form>
-          <div>
-            <p>{result ? `You silly goose! you could have made £${result}` : '' }</p>
-          </div>
         </div>
       </div>
     </section>
