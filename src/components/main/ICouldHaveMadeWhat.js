@@ -1,8 +1,6 @@
 import React from 'react'
-// import useForm from '../../utils/useForm'
-// import { registerUser } from '../../lib/api'
 import { Link } from 'react-router-dom'
-import CalculateOpportunityLoss from './CalculateOpportunityLoss'
+import CalculateOpportunityLoss from '../lib/CalculateOpportunityLoss'
 
 function ICouldHaveMadeWhat() {
   const [formdata, setFormdata] = React.useState({

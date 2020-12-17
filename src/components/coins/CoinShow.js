@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams  } from 'react-router-dom'
-import  { getSingleCoin } from '../components/api'
+import  { getSingleCoin } from '../lib/api'
 
 
 function CoinShow(){
@@ -55,18 +55,18 @@ function CoinShow(){
                   <p><span className="coin-show-title">Number Of Pairs:</span>{` ${coin.num_pairs}`}</p>
                   <p><span className="coin-show-title">First Trade:</span>{` ${coin.first_trade}`}</p>
                   <p><span className="coin-show-title">High:</span>{` ${coin.first_trade}`}</p>
-                  <p><span className="coin-show-title">7 Day Volume:</span>{` ${coin.['7d'].volume}`}</p>
-                  <p><span className="coin-show-title">7 Day Volume Change:</span>{` ${coin.['7d'].volume_change}`}</p>
-                  <p><span className="coin-show-title">7 Day Price PCT:</span>{` ${coin.['7d'].price_change_pct}`}</p>
-                  <p><span className="coin-show-title">7 Day Maket Cap Change:</span>{` ${coin.['7d'].market_cap_change}`}</p>
-                  <p><span className="coin-show-title">30 Day Volume:</span>{` ${coin.['30d'].volume}`}</p>
-                  <p><span className="coin-show-title">30 Day Volume Change</span>{` ${coin.['30d'].volume_change}`}</p>
-                  <p><span className="coin-show-title">30 Day Price Change PCT:</span>{` ${coin.['30d'].price_change_pct}`}</p>
-                  <p><span className="coin-show-title">30 Day Market Cap Change</span>{` ${coin.['30d'].market_cap_change}`}</p>
-                  <p><span className="coin-show-title">365 Day Volume:</span>{` ${coin.['365d'].volume}`}</p>
-                  <p><span className="coin-show-title">365 Day Volume Change:</span>{` ${coin.['365d'].volume_change}`}</p>
-                  <p><span className="coin-show-title">365 Price Change PCT</span>{` ${coin.['365d'].price_change_pct}`}</p>
-                  <p><span className="coin-show-title">365 Market Cap Change:</span>{` ${coin.['365d'].market_cap_change}`}</p>
+                  <p><span className="coin-show-title">7 Day Volume:</span>{` ${coin['7d'].volume}`}</p>
+                  <p><span className="coin-show-title">7 Day Volume Change:</span>{` ${coin['7d'].volume_change}`}</p>
+                  <p><span className="coin-show-title">7 Day Price Change:</span>{` ${coin['7d'].price_change_pct * 100}%`}</p>
+                  <p><span className="coin-show-title">7 Day Maket Cap Change:</span>{` ${coin['7d'].market_cap_change}`}</p>
+                  <p><span className="coin-show-title">30 Day Volume:</span>{` ${coin['30d'].volume}`}</p>
+                  <p><span className="coin-show-title">30 Day Volume Change</span>{` ${coin['30d'].volume_change}`}</p>
+                  <p><span className="coin-show-title">30 Day Price Change:</span>{` ${coin['30d'].price_change_pct * 100}%`}</p>
+                  <p><span className="coin-show-title">30 Day Market Cap Change</span>{` ${coin['30d'].market_cap_change}`}</p>
+                  <p><span className="coin-show-title">365 Day Volume:</span>{` ${coin['365d'].volume}`}</p>
+                  <p><span className="coin-show-title">365 Day Volume Change:</span>{` ${coin['365d'].volume_change}`}</p>
+                  <p><span className="coin-show-title">365 Price Change</span>{` ${coin['365d'].price_change_pct * 100}%`}</p>
+                  <p><span className="coin-show-title">365 Market Cap Change:</span>{` ${coin['365d'].market_cap_change}`}</p>
                 </div>
               </div>
             </div>

@@ -8,26 +8,26 @@ function CoinCard({ id , rank, logo_url, name, symbol, price, market_cap, ...pro
   
   return (
 	
-    <div className="container is-fluid"> 
+    <div className="container is-fluid "> 
       <Link to={`/coins/${id}`}>
         <div className="columns  is-centered coin-cards">
           <div className="column">
-            <h4><span className="mobile-title">Rank:</span>{rank}</h4>
+            <h4 className="coin"><span className="mobile-title">Rank:</span>{rank}</h4>
           </div>
           <div className="column">
             {<img src={logo_url} alt={name}/>}
           </div>
 
           <div className="column">
-            <h4 className="name"><span className="mobile-title">Name: </span>{name}</h4>
+            <h4 className="name"><span className="mobile-title"></span>{name}</h4>
           </div>
 
           <div className="column">
-            <h4 className="symbol"><span className="mobile-title">Symbol:</span>{symbol}</h4>
+            <h4 className="symbol"><span className="mobile-title"></span>{symbol}</h4>
           </div>
 
           <div className="column">
-            <h4><span className="mobile-title">Price: </span>{price}</h4>
+            <h4><span className="mobile-title"></span>{parseFloat(price).toFixed(2)}</h4>
           </div>
 
           <div className="column">

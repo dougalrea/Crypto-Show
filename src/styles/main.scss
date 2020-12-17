@@ -29,6 +29,16 @@ margin-top: 40px;
 margin-bottom: 20px;
 }
 
+.search-bar{
+	margin-top: 15px;
+}
+
+.coin-index{
+	margin-top: 5px;
+	color: black;
+}
+
+
 img {
   max-height: 35px;
   min-height: 35px;
@@ -59,6 +69,9 @@ img{
 	font-weight: bolder;
 }
 
+.coin-card-value{
+	color: black;
+}
 
 //*WHATS HOT
 
@@ -66,22 +79,23 @@ img{
 	display: flex;
 	margin: 30px 50px;
 }
-.gainerslosers {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 80%;
-}
+
 .whatsHotContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+	align-items: center;
 }
+
+.gainersLosers{
+	margin-bottom: 30px;
+	margin-top: -40px;
+}
+
 .gainersContainer,
  .losersContainer {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+	flex-wrap: nowrap;
 }
 .losers, .gainers {
   padding: 5px 8px 5px 8px;
@@ -92,6 +106,9 @@ img{
 .gainers {
   color: green;
 }
+
+
+//*Mobile view
 
 @media only screen and (max-width: 700px) {
  
@@ -121,6 +138,15 @@ img{
 
 .mobile-title{
 	display: inline-block;
+}
+
+.gainersContainer,
+ .losersContainer {
+  display: flex;
+  flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+
 }
 
 

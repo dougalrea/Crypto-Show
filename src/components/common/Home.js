@@ -12,7 +12,7 @@ function Home() {
       <div className="hero-body home-container" >
         <div className="container">
           <h1 className="title is-1 has-text-centered">
-        Home
+        Crypto Show
           </h1>
           <div className="container home-buttons"> 
             <Link to="/coins">

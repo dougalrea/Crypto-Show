@@ -1,12 +1,12 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import Home from './components/Home'
-import Nav from './components/Nav'
-import CoinIndex from './components/CoinIndex'
-import ICouldHaveMadeWhat from './components/ICouldHaveMadeWhat'
-import WhatsHot from './components/WhatsHot'
-import CoinShow from './components/CoinShow'
+import Home from './components/common/Home'
+import Nav from './components/common/Nav'
+import CoinIndex from './components/coins/CoinIndex'
+import ICouldHaveMadeWhat from './components/main/ICouldHaveMadeWhat'
+import WhatsHot from './components/main/WhatsHot'
+import CoinShow from './components/coins/CoinShow'
 
 function App() {
   return (

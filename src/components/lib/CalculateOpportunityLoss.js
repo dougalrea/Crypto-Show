@@ -1,4 +1,4 @@
-import { getAllCoinsUSD } from '../components/api'
+import { getAllCoinsUSD } from '../lib/api'
 import axios from 'axios'
 
 async function CalculateOpportunityLoss(formdata) {

@@ -1,13 +1,14 @@
 import React from 'react'
 
-import { getAllCoins } from '../components/api'
-import CoinCard from '../components/CoinCard'
+import { getAllCoins } from '../lib/api'
+import CoinCard from '../coins/CoinCard'
 
 
 
 function CoinIndex() {
   const [coins, setCoins] = React.useState(null)
   const [pageNumber, setPageNumber] = React.useState(1)
+  const [selectedName, setSelectedName] = React.useState('')
 
   function increase () {
     setPageNumber(pageNumber + 1)
@@ -16,11 +17,16 @@ function CoinIndex() {
     setPageNumber(pageNumber - 1)
   }
 
+
+
   React.useEffect(() => {
     const getData = async() => {
       try {
         const { data } = await getAllCoins( pageNumber )
-        setCoins(data)
+        const filterCurrencies = () => data.filter(currency => {
+          return currency.name.toLowerCase().includes(selectedName.toLowerCase())
+        })
+        setCoins(filterCurrencies())
       } catch (err) {
         console.log(err)
       }
@@ -30,11 +36,21 @@ function CoinIndex() {
       getData()
     }, 10000)
     return () => clearInterval(interval)
-  }, [pageNumber])
+  }, [selectedName, pageNumber])
+
+
+  const handleKeyUp = (e) => {
+    const selectedName = e.target.value
+    setSelectedName(selectedName)
+  }
+
+ 
+
 
   return (
     <div className ="container is-fluid ">
-      <div className="columns is-centered titles">
+      <input placeholder="Search" onKeyUp={handleKeyUp} className="search-bar"/>
+      <div className="columns is-centered titles coin-index">
 		
         <div className="column"> 
           <h2>Rank</h2>
@@ -44,11 +60,11 @@ function CoinIndex() {
         </div>
           
         <div className="column">
-          <h2>Symbol</h2>
+          <h2>Name</h2>
         </div>
 
         <div className="column"> 
-          <h2>Name</h2>
+          <h2>Symbol</h2>
         </div>
 
         <div className="column"> 
