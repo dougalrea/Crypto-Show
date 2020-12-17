@@ -32,7 +32,7 @@ async function CalculateOpportunityLoss(formdata) {
   const formattedEndDate = relevantEndDate.toISOString()
 
   const getHistoricValue = async () => {
-    const { data } = await axios.get(`https://api.nomics.com/v1/exchange-rates/history?key=${key}&currency=${relevantId}&start=${formattedStartDate}&end=${formattedEndDate}`)
+    const { data } = await axios.get(`https://cors-anywhere.herokuapp.com/https://api.nomics.com/v1/exchange-rates/history?key=${key}&currency=${relevantId}&start=${formattedStartDate}&end=${formattedEndDate}`)
     return data[0].rate
   }
   getHistoricValue()
