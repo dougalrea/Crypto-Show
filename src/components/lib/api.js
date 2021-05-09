@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = 'https://cors-anywhere.herokuapp.com/https://api.nomics.com/v1'
+const baseUrl = 'https://cors.bridged.cc/https://api.nomics.com/v1'
 const key = process.env.REACT_APP_MY_API_KEY
 
 
