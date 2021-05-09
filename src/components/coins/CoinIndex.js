@@ -34,7 +34,7 @@ function CoinIndex() {
     getData()
     const interval = setInterval(() => {
       getData()
-    }, 10000)
+    }, 1002)
     return () => clearInterval(interval)
   }, [selectedName, pageNumber])
 
