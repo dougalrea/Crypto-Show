@@ -26,7 +26,11 @@ function WhatsHot() {
   React.useEffect(() => {
  
     const getData = async () => {
-      const requests = Array(1).fill(null).map((_, index) => getAllCoins(3)
+      const requests = Array(1).fill(null).map((_, index) => getAllCoins(index + 3))
+      // The line above was previously 
+      // const requests = Array(6).fill(null).map((_, index) => getAllCoins(index + 1))
+      // This allows the biggest gainers and losers to be calculated from the first 600 currencies, but now Nomics API has restricted requests to 1 per second so this doesnt work. For the time being, only 100 currencies will be scanned, and I have chosen the 3rd page as these are usually more volatile and therefore show bigger 24hr % changes.
+
       const responses = await Promise.all(requests)
       const formattedResponse = responses.flatMap(res => res.data)
       formattedResponse.sort(compare)
