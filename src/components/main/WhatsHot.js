@@ -26,7 +26,7 @@ function WhatsHot() {
   React.useEffect(() => {
  
     const getData = async () => {
-      const requests = Array(6).fill(null).map((_, index) => getAllCoins(index + 1))
+      const requests = Array(1).fill(null).map((_, index) => getAllCoins(index + 1))
       const responses = await Promise.all(requests)
       const formattedResponse = responses.flatMap(res => res.data)
       formattedResponse.sort(compare)
