@@ -6,10 +6,6 @@ Crypto Show is a single page React Application with multiple components. The app
 
 This was the second project I completed as a student of Software Engineering Immersive at General Assemnbly. This was a pair project, where my team mate and I were tasked with building a functional React Application which consumed data from a public API in only 48 hours.
 
-Here is the landing page:
-![Home page!](/src/Resources/home.png "Home page")
-
-
 ## Technologies used
 
 - React JS
@@ -29,11 +25,23 @@ Here is the landing page:
 ### How to use the App
 When a user first logs in to the app they are presented with the home page. The Nav Bar is hidden at this point, but the user can select one of three links below the heading.
 
-If a user clicks, ‘See All Currencies’ they are taken to the page that corresponds to ‘coins’ in the Nav Bar. This page lists all the crypto currencies in the Nomics API, ordered by market capitalisation. The user can search for a currency by name or scroll through the currencies page by page, with each page showing 100 results. The user can then click on a cryptocurrency and will be taken to another page which displays much more data about that currency, including 7-day, 30-day & 365-day historical market data.
+![Home page](/src/Resources/home.png "Home page")
+
+If a user clicks, ‘See All Currencies’ they are taken to the page that corresponds to ‘coins’ in the Nav Bar. This page lists all the crypto currencies in the Nomics API, ordered by market capitalisation. The user can search for a currency by name or scroll through the currencies page by page, with each page showing 100 results. 
+
+![Index page](/src/Resources/index.png "Index page")
+
+The user can then click on a cryptocurrency and will be taken to another page which displays much more data about that currency, including 7-day, 30-day & 365-day historical market data.
+
+![Coin page](/src/Resources/coin.png "Coin page")
 
 If the user clicks ‘I Could Have Made What!’ at the home page, they are taken to the page which calculates how much money the user could have made by investing in either Bitcoin or Ethereum on a specific date.
 
+![Opportunity cost calculator!](/src/Resources/canculator.png "Calculator")
+
 Lastly, if a user selects ‘Whats Hot’ at the home page, they are presented with the embedded twitter pages of Bitcoin, Ethereum, Bitcoin cash, Ripple, and Tether Beneath these is a 'biggest gainers and losers' banner which lists the five currencies which gained and lost the most value in the past 24 hours. All data displayed throughout the application is updated automatically every 10 seconds.
+
+![What's hot page!](/src/Resources/hot.png "What's hot page")
 
 
 Creating The App
