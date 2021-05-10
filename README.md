@@ -8,7 +8,7 @@ This was the second project I completed as a student of Software Engineering Imm
 
 ## Technologies used
 
-- React JS
+- React & JSX
 - JavaScript
 - Axios
 - Bulma
@@ -37,7 +37,7 @@ The user can then click on a cryptocurrency and will be taken to another page wh
 
 If the user clicks ‘I Could Have Made What!’ at the home page, they are taken to the page which calculates how much money the user could have made by investing in either Bitcoin or Ethereum on a specific date.
 
-![Opportunity cost calculator!](/src/Resources/canculator.png "Calculator")
+![Opportunity cost calculator!](/src/Resources/calculator.png "Calculator")
 
 Lastly, if a user selects ‘Whats Hot’ at the home page, they are presented with the embedded twitter pages of Bitcoin, Ethereum, Bitcoin cash, Ripple, and Tether Beneath these is a 'biggest gainers and losers' banner which lists the five currencies which gained and lost the most value in the past 24 hours. All data displayed throughout the application is updated automatically every 10 seconds.
 
