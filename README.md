@@ -7,6 +7,7 @@ Crypto Show is a single page React Application with multiple components. The app
 This was the second project I completed as a student of Software Engineering Immersive at General Assemnbly. This was a pair project, where my team mate and I were tasked with building a functional React Application which consumed data from a public API in only 48 hours.
 
 Here is the landing page:
+![Home page!](/resources/home.png "Home page")
 
 
 ## Technologies used
