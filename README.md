@@ -1,4 +1,4 @@
-# Crypto-Show: Pair-programming Reactathon
+# Crypto Show: Pair-programming Reactathon
 
 ## Overview
 
