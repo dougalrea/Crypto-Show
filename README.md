@@ -244,22 +244,20 @@ Since the Nomics API is only apdated every ten seconds, setting the `getData()` 
 
 ### Twitter Feed
 
-Tim started by researching how we could embed the twitter profiles of the top 5 ranked crypto currencies on the page and found that an NPM package called ‘React Twitter Embed’ was the best way to do this.
+Tim researched how we could embed the twitter profiles of the top 5 ranked cryptocurrencies on the page, and found that an NPM package called ‘React Twitter Embed’ was the best way to do this.
 
 ## Challenges
-We ran into a few challenges while building the Crypto Show App. The two biggest challenges would have were, firstly was converting the data captured from a user into a format that the Nomics API would accept. Secondly would have been some of the object keys used in the Nomics API had irregular naming conventions that conflicted with JavaScript like having a numeral at the start of a key name. It took a while to find a work around for this.
 
-Wins
-The biggest win for me was creating an end product that was really close to our intial plan. We did have to make a few comprises after finding out that working with a public API was not as straight forward as we initially thought.
+We ran into a few challenges while building the Crypto Show App. Firstly, it was disheartening to realise that historical data was only available for bitcoin and ethereum, as we had initially hoped to extend the opportunity cost calculator functionality to every currency on the index page. Secondly was converting the data captured from a user into a format that the Nomics API would accept.  would have been some of the object keys used in the Nomics API had irregular naming conventions that conflicted with JavaScript like having a numeral at the start of a key name. It took a while to find a work around for this.
 
-This was the first pair coded project we had both undertaken. Dougal and I worked really well as a team and both brought different strengths to the table that allowed us to make a site that looked great and was packed full of functionality.
+## Wins
 
-Learnings
-The importance of good naming conventions when creating an API.
-Carefully read API documentation.
-When working in a team, learn from your team mates strengths especially when it comes to areas where you’re lacking in knowledge or you feel uncomfortable.
-Future Features
-If I had more time I would like to:
+The biggest win for me was creating an end product that was very close to our original plan. We did have to make a few compromises after finding out that working with a public API means having to accomodate often inconveniently structured data sets, but we were very pleased to have successfully incorporated the more challenging aspects of data manipulation as required by the opportunity cost calulator and the 'What's Hot' page.
 
-Update 'I Could Have What!!' page to search for more than two currencies.
-Add more content to the 'Whats Hot? page.
+This was the first pair coded project we had both undertaken. Tim and I worked really well as a team and we both brought different strengths to the table that allowed us to make a site that looks great and is packed full of functionality (if I do say so myself).
+
+## Lessons
+
+- The importance of understandable naming conventions when structuring data in an API.
+- Carefully read API documentation.
+- When working in a team, understanding your team mate's strengths and learning from them can enhance both parties' abilities. In this case, Tim was more knowledgable and competent with styling and UI design type work, while I was more comfortable with data processing and 'behind the scenes' functionality. I believe this balance of skill is what enabled us to work so well as a team.
