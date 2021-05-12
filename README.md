@@ -2,7 +2,7 @@
 
 ## Overview
 
-Crypto Show is a single page React Application with multiple components. The app consumes cryptocurrency data from Nomics Public API and mounts the data back to the app. The data is then manipulated and rendered in an interactive way for the user. The application is deployed online and hosted by Netlify. **[Check it out here!](https://festive-curran-721d2b.netlify.app/)**
+Crypto Show is a single page React Application with multiple components. The app consumes cryptocurrency data from Nomics Public API and mounts the data back to the app. The data is then manipulated, processed, and rendered in an interactive way for the user. The application is deployed online and hosted by Netlify. **[Check it out here!](https://festive-curran-721d2b.netlify.app/)**
 
 This was the second project I completed as a student of Software Engineering Immersive at General Assemnbly. This was a pair project, where my team mate and I were tasked with building a functional React Application which consumed data from a public API in only 48 hours.
 
